@@ -7,7 +7,7 @@ Este é um projeto que desenvolvi durante meu trabalho de uma internet interna, 
 
 1. Clone o repositorio:
    ```sh
-   git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+   git clone https://github.com/dpadoveis/intranet.git
    ```
 2. Instale as dependencias:
    ```sh
