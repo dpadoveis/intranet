@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este é um projeto que desenvolvi durante meu trabalho de uma internet interna, para facilitar a navegação dos usuários internos da empresa, utilizando HTML,CSS,JS e linkando via Node.JS.
+Este é um projeto que desenvolvi durante meu trabalho de uma intranet, para facilitar a navegação dos usuários internos da empresa, utilizando HTML,CSS,JS e linkando via Node.JS.
 ## Instalação
 
 1. Clone o repositorio:
