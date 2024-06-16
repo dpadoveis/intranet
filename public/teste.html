@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub do Funcionário CRA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#" target="_blank">
+                <div class="logo-container">
+                <img src="images/Assinatura_CRA_MG_Colorida_horizontal-01.png" alt="logomain">
+                </div>
+            </a>
+            <h2 class="sidebar-title">Acesso Rápido</h2>
+            <ul>
+                <li><i class="material-icons" style="font-size:17px">mail_outline</i><a href="#"
+                        target="_blank"> Gmail CRA-MG</a></li>
+                        <hr class="sidebar-line">
+                <li><i class="material-icons" style="font-size:17px">priority_high</i><a href="#"
+                        target="_blank"> Sei!</a></li>
+                        <hr class="sidebar-line">
+                <li><i class="material-icons" style="font-size:17px">vpn_lock</i><a
+                        href="#" target="_blank"> SPW</a></li>
+                        <hr class="sidebar-line">
+                <li><i class="material-icons" style="font-size:17px">headset_mic</i><a
+                        href="#" target="_blank"> Help Desk</a></li>
+                        <hr class="sidebar-line">
+                <li><i class="material-icons" style="font-size:17px;">cloud</i><a href="#"
+                        target="_blank"> DocsPrime</a></li>
+                        <hr class="sidebar-line">
+                <li><i class="material-icons" style="font-size:17px">wifi</i><a
+                        href="#"
+                        target="_blank"> Serviços Online</a></li>
+                        <hr class="sidebar-line">
+                <li><i class="material-icons" style="font-size:17px">folder_open</i><a
+                        href="#"
+                        target="_blank"> Sistemas Gerenciais</a>
+                        <hr class="sidebar-line">
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <header>
+                <h1>Hub do Funcionário CRA-MG</h1>
+                <div class="logoradio">
+                    <div class="logoradio">
+                            <a href="#" target="_blank">    <img src="images/radio-cra-logo.png" alt="Rádio CRA das Gerais"></a>
+                    </div>
+            </header>
+            <div class="content">
+                <h2>Dia: <span id="currentDate"></span></h2>
+                <script>
+                    const today = new Date();
+
+                    let mm = today.getMonth() + 1;
+                    let dd = today.getDate();
+
+                    if (dd < 10) dd = '0' + dd;
+                    if (mm < 10) mm = '0' + mm;
+
+                    const formattedToday = dd + '/' + mm;
+
+                    document.getElementById('currentDate').innerHTML = formattedToday;
+                </script>
+                <a href="calendar.html">+ Ver calendário CRA</a>
+                <hr>
+                <h2>Agendamento Quick Massage</h2>
+                <a href="#" target="_blank">
+                        <button>Agende agora!</button>
+                </a>
+            </div>
+            <footer>
+                <p>
+                    Assessoria de Infraestrutura e Suporte de TI <br>
+                    Email:  <br>
+                     Diogo 
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

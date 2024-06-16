@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #03579C;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-line {
+    width: 280px;
+    margin-left: -70px;
+    align-items: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4399df;
+}
+
+li {
+    list-style: none;
+    font-size: 16px; 
+    margin-bottom: 15px;
+}
+
+.sidebar-title {
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-content {
+    margin-left: 320px; /* Ajustado para corresponder à largura da barra lateral */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logos img {
+    margin-left: 20px;
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+
+
+.logo-container {
+    background-color: #ffffff;
+    width: 270px;
+    height: 100%;
+    margin-top: -5px;
+    align-items: center;
+    margin-bottom: -40px;
+    border:#03579C;
+    border-style: solid;
+    border-radius: 100px;
+}
+
+
+
+.sidebar img {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+    margin-left: 40px;
+    margin-top: -10px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    font-size: 16px; 
+    margin-bottom: 15px;
+}
+
+.sidebar-title {
+    font-size: 24px; /* Tamanho grande para o texto */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 20px; /* Espaçamento abaixo do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+.main-content {
+    margin-left: 320px; /* Ajustado para corresponder à largura da barra lateral */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+button {
+    background-color: #03579C;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #cccccc;
+    width: calc(100% - 250px); /* Ajuste para não sobrepor a barra lateral */
+    margin-left: 250px; /* Margem esquerda igual à largura da barra lateral */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.date-time 
+{
+    font-size: 18px;
+    font-weight: bold;
+}

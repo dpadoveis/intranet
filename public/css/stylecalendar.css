@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden; /* Remove a possibilidade de rolagem horizontal */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #03579C;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-line {
+    width: 280px;
+    margin-left: -70px;
+    align-items: center;
+}
+
+.sidebar img {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: 15px; /* Espaçamento abaixo da imagem */
+    margin-left: 40px;
+    margin-top: -10px;
+}
+
+.sidebar-title {
+    font-size: 24px; /* Tamanho grande para o texto */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 20px; /* Espaçamento abaixo do texto */
+    margin-top: 60px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.logo-container {
+    background-color: #ffffff;
+    width: 270px;
+    height: 8.5%;
+    margin-top: -5px;
+    align-items: center;
+    margin-bottom: -40px;
+    border:#03579C;
+    border-style: solid;
+    border-radius: 100px;
+}
+
+li {
+    list-style: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4399df;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 270px; /* Ajuste para compensar a barra lateral */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Ajuste para garantir que o conteúdo ocupe toda a altura disponível */
+}
+
+.calendar-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ajustado para ocupar toda a largura disponível */
+    max-width: 1000px; /* Ajustado para ser mais largo */
+    margin-bottom: 20px; /* Espaçamento abaixo do calendário */
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #03579C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calendar-header button:hover {
+    background-color: #03579C;
+}
+
+.calendar-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    height: 100px;
+    position: relative;
+}
+
+.calendar th {
+    background-color: #03579C;
+    color: white;
+    font-weight: normal;
+}
+
+.calendar td.empty {
+    background-color: #f5f5f5;
+    cursor: default;
+}
+
+.event {
+    background-color: #4399df;
+    color: white;
+    padding: 3px;
+    margin-top: 5px;
+    border-radius: 3px;
+    font-size: 13px;
+    
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #cccccc;
+    width: calc(100% - 250px); /* Ajuste para não sobrepor a barra lateral */
+    margin-left: 250px; /* Margem esquerda igual à largura da barra lateral */
+    position: relative;
+}
+.date-time {
+    font-size: 18px;
+    font-weight: bold;
+}

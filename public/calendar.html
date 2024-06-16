@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="stylecalendar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo-container">
+                <a href="teste.html"><img src="images/Assinatura_CRA_MG_Colorida_horizontal-01.png" alt="CRA-MG Logo"></a>
+            </div>
+            <h2 class="sidebar-title">Acesso Rápido</h2>
+            <ul>
+                <li><i class="material-icons" style="font-size:17px">mail_outline</i><a href="https://mail.google.com/" target="_blank"> Gmail CRA-MG</a></li>
+                <hr class="sidebar-line">
+                <li><i class="material-icons" style="font-size:17px">priority_high</i><a href="https://sei.cfa.org.br/" target="_blank"> Sei!</a></li>
+                <hr class="sidebar-line">
+                <li><i class="material-icons" style="font-size:17px">vpn_lock</i><a href="https://spwsistemas.cramg.org.br:5443/spw/Chamador/login.aspx" target="_blank"> SPW</a></li>
+                <hr class="sidebar-line">
+                <li><i class="material-icons" style="font-size:17px">headset_mic</i><a href="http://crasuporte.cramg.org.br/glpi/front/central.php" target="_blank"> Help Desk</a></li>
+                <hr class="sidebar-line">
+                <li><i class="material-icons" style="font-size:17px">cloud</i><a href="http://craserver9/docsprime/" target="_blank"> DocsPrime</a></li>
+                <hr class="sidebar-line">
+                <li><i class="material-icons" style="font-size:17px">wifi</i><a href="https://spwsistemas.cramg.org.br:5443/spw/ConsultaCadastral/Principal.aspx" target="_blank"> Serviços Online</a></li>
+                <hr class="sidebar-line">
+                <li><i class="material-icons" style="font-size:17px">folder_open</i><a href="https://spwsistemas.cramg.org.br:5443/spw/SistemasGerenciaisNovo/Chamador/login.aspx" target="_blank"> Sistemas Gerenciais</a></li>
+                <hr class="sidebar-line">
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button id="prev">Anterior</button>
+                    <h2 id="monthYear"></h2>
+                    <button id="next">Próximo</button>
+                </div>
+                <table class="calendar">
+                    <thead>
+                        <tr>
+                            <th>Dom</th>
+                            <th>Seg</th>
+                            <th>Ter</th>
+                            <th>Qua</th>
+                            <th>Qui</th>
+                            <th>Sex</th>
+                            <th>Sáb</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendarBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>
+            Assessoria de Infraestrutura e Suporte de TI <br>
+            Email: tecnologia@cramg.org.br <br>
+            Hebert - Ramal 2034 | Renato - Ramal 2049 | Diogo - Ramal 2035
+        </p>
+    </footer>
+    <script src="calendar.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+    "name": "monthly-calendar",
+    "version": "1.0.0",
+    "main": "calendar.html",
+    "scripts": {
+        "start": "parcel calendar.html --open",
+        "build": "parcel build calendar.html"
+    },
+    "dependencies": {
+        "body-parser": "^1.20.2",
+        "cors": "^2.8.5",
+        "dayjs": "1.8.19",
+        "express": "^4.19.2",
+        "mysql": "^2.18.1"
+    },
+    "devDependencies": {
+        "@babel/core": "7.2.0",
+        "parcel-bundler": "^1.6.1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}
